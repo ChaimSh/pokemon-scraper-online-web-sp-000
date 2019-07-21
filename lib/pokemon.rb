@@ -1,6 +1,6 @@
 class Pokemon
 
-attr_accessor :id, :name, :type, :db
+attr_accessor :id, :name, :type, :db, :hp
 
 
   def initialize(keywords)
@@ -27,7 +27,7 @@ attr_accessor :id, :name, :type, :db
     new_pokemon.id = pokemon[0][0]
     new_pokemon.name = pokemon[0][1]
     new_pokemon.type = pokemon[0][2]
-  #  new_pokemon.hp = pokemon[0][3]
+    new_pokemon.hp = pokemon[0][3]
     return new_pokemon
   end
 
